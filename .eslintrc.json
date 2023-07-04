@@ -1,0 +1,72 @@
+{
+  "root": true,
+  "extends": [
+    "@nuxtjs/eslint-config-typescript",
+    "plugin:json/recommended",
+    "plugin:tailwindcss/recommended"
+  ],
+  "plugins": [
+    "simple-import-sort"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.vue"
+      ],
+      "parser": "vue-eslint-parser"
+    },
+    {
+      "files": [
+        "tsconfig.json"
+      ],
+      "rules": {
+        "json/*": [
+          "error",
+          {
+            "allowComments": true
+          }
+        ]
+      }
+    }
+  ],
+  "rules": {
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "no-console": "off",
+    "semi": [
+      "error",
+      "always"
+    ],
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "never"
+      }
+    ],
+    "space-before-function-paren": [
+      "error",
+      "never"
+    ],
+    "curly": [
+      "error",
+      "multi-line"
+    ],
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
+    "no-useless-return": "off",
+    "vue/multi-word-component-names": "off",
+    "vue/no-multiple-template-root": "off",
+    "vue/no-setup-props-destructure": "off",
+    "tailwindcss/no-custom-classname": "off"
+  }
+}

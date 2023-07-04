@@ -1,0 +1,45 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev -o",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "eslint": "eslint . --ext .vue,.js,.ts,.tsx,.json --fix --ignore-path .gitignore",
+    "stylelint": "stylelint \"**/*.{vue,css,scss}\" --fix --ignore-path .gitignore",
+    "lint": "run-p eslint stylelint",
+    "clean": "rimraf .nuxt .output dist"
+  },
+  "devDependencies": {
+    "@mdi/js": "^7.2.96",
+    "@nuxt/devtools": "latest",
+    "@nuxt/image": "1.0.0-rc.1",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@nuxtjs/eslint-module": "^4.1.0",
+    "@nuxtjs/stylelint-module": "^5.1.0",
+    "@nuxtjs/tailwindcss": "^6.8.0",
+    "@types/node": "^18.16.19",
+    "eslint": "^8.44.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-tailwindcss": "^3.13.0",
+    "npm-run-all": "^4.1.5",
+    "nuxt": "^3.6.1",
+    "rimraf": "^5.0.1",
+    "sass": "^1.63.6",
+    "stylelint": "^15.9.0",
+    "stylelint-config-recommended": "^12.0.0",
+    "stylelint-config-recommended-scss": "^12.0.0",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "typescript": "^5.1.6",
+    "vite-svg-loader": "^4.0.0",
+    "vue-eslint-parser": "^9.3.1",
+    "vue-tsc": "^1.8.3"
+  },
+  "dependencies": {
+    "vite-plugin-vuetify": "^1.0.2",
+    "vuetify": "^3.3.6"
+  }
+}
